@@ -27,6 +27,21 @@ Research Task
 ## Introduction
 Provide an overview of the report. Briefly explain the purpose, scope, and importance of Enterprise Integration in modern software architecture. 
 
+## Technology Stack
+This section outlines the tools and technologies used throughout the project for research, documentation, development, and collaboration.
+- **Git**: Used for version control to track changes, manage contributions, and maintain the history of the project.
+- **GitHub/GitLab**: The platform for hosting the repository, managing issues, and collaborating with team members.
+- **Visual Studio Code**: The primary text editor used for writing the report in Markdown, embedding diagrams, and formatting code snippets.
+- **Markdown**: Chosen for writing the report due to its simplicity, readability, and compatibility with version control systems.
+- **Mermaid**: Used for creating diagrams directly within Markdown files, allowing for easy visualization of integration patterns and architectural concepts.
+- **DrawIO**: An online tool used for collaborative diagramming, especially for more complex diagrams that require interactive editing.
+- **Messenger/Discord**: Used for team communication, coordinating research efforts, and sharing resources.
+- **Google Scholar, YouTube, Medium**: Sources for gathering current information on Enterprise Integration and related topics.
+- **Docker**: Utilized for containerizing and testing microservices to demonstrate integration patterns like Pipes and Filters.
+- **C#, osv osv**: Programming language and framework chosen for implementing integration patterns and providing working examples.
+- **IPhone 11 Pro Max Camera, Cap Cut for Editing**: Used to record the 5-minute video presentation summarizing the key findings from the report.
+- **Google Slides**: For creating slides and visual aids to enhance the presentation.
+
 ## What is Enterprise Integration?
 Define Enterprise Integration and discuss its significance in building scalable, distributed applications. Include key concepts and goals, such as interoperability, scalability, and flexibility.
 
