@@ -71,7 +71,7 @@ Briefly mention other common integration patterns, such as:
 ## Diagramming Standards
 ### UML
 - **Explanation**: Describe UML (Unified Modeling Language) and its relevance in Enterprise Integration.
-- **Examples**: Provide a simple UML diagram relevant to your topic.
+- **Examples**: Provide a simple UML diagram relevant to our topic.
 
 ### Mermaid Diagrams
 - **Explanation**: Explain how Mermaid can be used to create diagrams directly in Markdown.
@@ -84,11 +84,11 @@ Briefly mention other common integration patterns, such as:
 - **Explanation**: Walk through the code, explaining key components and how they implement the pattern.
 
 ### Other Patterns Implementation
-Follow the same format as above for any additional patterns you implement.
+Follow the same format as above for any additional patterns we implement.
 
 ## Conclusion
 Summarize the key points discussed in the report. Reinforce the importance of understanding and applying Enterprise Integration principles in real-world scenarios.
 
 ## References
-Provide a list of all the sources you used for your research, including blogs, articles, videos, and any academic papers. Use a consistent citation style (e.g., APA, MLA) to format your references.
+Provide a list of all the sources we used for our research, including blogs, articles, videos, and any academic papers. Use a consistent citation style (e.g., APA, MLA) to format our references.
 
