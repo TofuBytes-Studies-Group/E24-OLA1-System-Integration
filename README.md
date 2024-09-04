@@ -44,6 +44,17 @@ This section outlines the tools and technologies used throughout the project for
 
 ## What is Enterprise Integration?
 Define Enterprise Integration and discuss its significance in building scalable, distributed applications. Include key concepts and goals, such as interoperability, scalability, and flexibility.
+#### Event Driven Integration
+- **Promotes Loose couplings between components**, allowing them to operate independently. Scalability. Suitable for Micro Services.
+#### Application-centric Integration
+- **Particularly relevant in modern software development**, where building applications as a set of loosely coupled and independently deployable **components** is essential for scalability, maintainability and agility. It aligns well with **contemporary microservices (breaking larger problems into smaller chunks/services** architecture and API-driven development practices.
+
+#### Summary
+- **Data-centric integration** focuses on a single source of truth, ensuring data consistency and accuracy, ideal for scenarios requiring reliable data for decision making.
+
+- **Event-driven integration** excels in environments needing real-time responsiveness and scalability, perfect for dynamic, fast-changing conditions.
+
+- **Application-centric integration** emphasizes modularity and reusability, suited for scalable, maintainable applications, often aligning with microservices architecture and API-driven development.
 
 ## Architectural Styles
 ### Monolithic Architecture
