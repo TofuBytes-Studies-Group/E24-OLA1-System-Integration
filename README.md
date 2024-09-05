@@ -193,7 +193,7 @@ UML is widely used in Enterprise Integration, because it provides a set of diagr
 **Examples**: Provide a simple UML diagram relevant to our topic.
 
 #### DrawIO Diagram Microservices Architecture
-![Microservice diagram](Images\Microservice_solution.PNG)
+![Microservice diagram](Images/Microservice_solution.PNG)
 [Source](https://microservices.io/patterns/microservices.html)
 
 Diagram Explanation
@@ -214,7 +214,7 @@ Databases:
 
 
 #### DrawIO Diagram Monolithic Architecture
-![Monolithic diagram](Images\Monolithic_solution.PNG)
+![Monolithic diagram](Images/Monolithic_solution.PNG)
 [Source](https://microservices.io/patterns/monolithic.html)
 
 Flower Shop Application:
