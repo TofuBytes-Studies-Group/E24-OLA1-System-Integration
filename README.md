@@ -194,7 +194,9 @@ UML is widely used in Enterprise Integration, because it provides a set of diagr
 
 #### DrawIO Diagram Microservices Architecture
 ![Microservice diagram](Images/Microservice_solution.PNG)
-[Source](https://microservices.io/patterns/microservices.html)
+<a href="https://microservices.io/patterns/microservices.html" 
+           target="_blank">Source
+</a> 
 
 Diagram Explanation
 API Gateway:
@@ -215,7 +217,9 @@ Databases:
 
 #### DrawIO Diagram Monolithic Architecture
 ![Monolithic diagram](Images/Monolithic_solution.PNG)
-[Source](https://microservices.io/patterns/monolithic.html)
+<a href="https://microservices.io/patterns/monolithic.html" 
+           target="_blank">Source
+</a> 
 
 Flower Shop Application:
 - The entire application is a single, monolithic unit. It integrates all functionalities into one codebase, split up in different classes.
