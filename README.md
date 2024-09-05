@@ -4,7 +4,6 @@ Research Task
 # Table of Contents
 
 - [Introduction](#introduction)
-   - Overview of the report
 
 - [Technology Stack](#technology-stack)
 
@@ -18,8 +17,6 @@ Research Task
    - [Pipes and Filters](#pipes-and-filters)
    - [Message Broker](#message-broker)
    - [Other Patterns](#other-patterns)
-      - Publish-Subscribe
-      - Request-Reply
 
 - [Diagramming Standards](#diagramming-standards)
    - [UML](#uml)
@@ -196,7 +193,7 @@ UML is widely used in Enterprise Integration, because it provides a set of diagr
 **Examples**: Provide a simple UML diagram relevant to our topic.
 
 #### DrawIO Diagram Microservices Architecture
-![img.png](microservice_flowershop.png)
+![Microservice flowershop](microservice_flowershop.png)
 Diagram Explanation
 API Gateway:
 - Acts as the entry point for all client requests, routing them to the appropriate microservices. It handles cross-cutting concerns such as authentication, load balancing, and request routing.
@@ -215,7 +212,7 @@ Databases:
 
 
 #### DrawIO Diagram Monolithic Architecture
-![img_1.png](monolithic_flowershop.png)
+![Monolithic flowershop](monolithic_flowershop.png)
 
 Flower Shop Application:
 - The entire application is a single, monolithic unit. It integrates all functionalities into one codebase, split up in different classes.
