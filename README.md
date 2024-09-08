@@ -18,8 +18,10 @@ Research Task
    - [Message Broker](#message-broker)
    - [Other Patterns](#other-patterns)
 
-- [Diagramming Standards](#diagramming-standards)
-   - [UML](#uml)
+- [Diagrams](#diagrams)
+   - [Diagram Microservices Architecture](#diagram-microservices-architecture)
+   - [Diagram Monolith Architecture](#diagram-monolithic-architecture)
+  
 
 - [Conclusion](#conclusion)
 
@@ -178,15 +180,9 @@ Use Cases:
 - Web services where a client sends a request to retrieve data (e.g., API calls to retrieve user info, payment verification).
 - Database queries where a request for data is followed by an immediate reply containing the result.
 
-## Diagramming Standards
-### UML
-**Explanation**: Describe UML (Unified Modeling Language) and its relevance in Enterprise Integration.
+## Diagrams
 
-UML is widely used in Enterprise Integration, because it provides a set of diagram types for various aspects of software development, including system architecture, class structure, sequence of operations, and more. UML diagrams help developers and architects visualize the structure and behavior of a system, making it easier to communicate design decisions and understand complex systems.
-
-**Examples**: Provide a simple UML diagram relevant to our topic.
-
-#### DrawIO Diagram Microservices Architecture
+### Diagram Microservices Architecture
 ![Microservice diagram](Images/Microservice_solution.PNG)
 <a href="https://microservices.io/patterns/microservices.html" 
            target="_blank">Source
@@ -197,30 +193,18 @@ API Gateway:
 - Acts as the entry point for all client requests, routing them to the appropriate microservices. It handles cross-cutting concerns such as authentication, load balancing, and request routing.
 
 Microservices:
-- Product Service: Manages the product catalog, including adding and updating flower information. It interacts with the Product Database.
-- Order Service: Handles the creation, tracking, and management of orders. It interacts with the Order Database.
-- Customer Service: Manages customer profiles and information. It interacts with the Customer Database.
-- Payment Service: Processes payments and handles financial transactions. It interacts with the Payment Database.
-
-Databases:
-- Product Database: Stores information about flowers and products.
-- Order Database: Contains details about orders and their statuses.
-- Customer Database: Maintains customer profiles and purchase history.
-- Payment Database: Records payment transactions.
+- Delivery Service: Handles the delivery and which courier the delivery is the delivered through.
+- Order Service: Handles the creation and management of orders. 
+- Customer Service: Manages customer profiles and information. 
 
 
-#### DrawIO Diagram Monolithic Architecture
+### Diagram Monolithic Architecture
 ![Monolithic diagram](Images/Monolithic_solution.PNG)
 <a href="https://microservices.io/patterns/monolithic.html" 
            target="_blank">Source
 </a> 
 
-Flower Shop Application:
-- The entire application is a single, monolithic unit. It integrates all functionalities into one codebase, split up in different classes.
-
-Modules: Modules are the same as in the microservice architecture, but they are all part of the same application.
-
-Databases: The application uses a single database to store all data. The database is the same as the microservice architecture.
+In a monolithic architecture the application is a single deployable component and all operations are handled within that single component. 
 
 ## Conclusion
 Summarize the key points discussed in the report. Reinforce the importance of understanding and applying Enterprise Integration principles in real-world scenarios.
