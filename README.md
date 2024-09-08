@@ -104,11 +104,9 @@ The monolithic architecture works good as a combined unit, where all the functio
 
 ## Integration Patterns
 ### Pipes and Filters
-**Overview**: Describe the Pipes and Filters pattern. 
+
 
 The pipes and filters pattern is a design pattern that allows you to process data in a series of steps, where each step is a filter that transforms the data in some way. The filters are connected by pipes, which are used to pass data from one filter to the next. This pattern is commonly used in scenarios where you need to process data in a modular and extensible way, such as in data processing pipelines or data transformation workflows.
-
-**Diagram**: Insert a diagram illustrating how Pipes and Filters work.
 
 ```
   A[Input] --> B(Filter1)
@@ -119,7 +117,7 @@ The pipes and filters pattern is a design pattern that allows you to process dat
 
 This diagram shows a simple example of the pipes and filters pattern, where data flows from an input source (A) through a series of filters (B, C, D) to an output destination (E).
 
-**Use Cases**: Explain where and why this pattern might be used.
+**Use Cases**:
 
 Image Processing Pipelines
 - Scenario: Editing images by applying multiple transformations in a sequence.
@@ -145,10 +143,8 @@ Example:
 Why Pipes and Filters? Each step (collect, match, alert, store) is independent, making it easy to modify or expand the pipeline as new log patterns or analytics needs emerge.
   
 ### Message Broker
-**Overview**: Describe the Message Broker pattern.
-The Message Broker pattern is a messaging pattern that involves the use of a message broker to facilitate communication between different components of a system. In this pattern, components communicate by sending messages to a central message broker, which then routes the messages to the appropriate recipients. This decouples the sender and receiver, allowing them to communicate asynchronously without being directly connected.
 
-**Diagram**: Include a diagram to represent the Message Broker pattern.
+The Message Broker pattern is a messaging pattern that involves the use of a message broker to facilitate communication between different components of a system. In this pattern, components communicate by sending messages to a central message broker, which then routes the messages to the appropriate recipients. This decouples the sender and receiver, allowing them to communicate asynchronously without being directly connected.
 
 ```
   A(Sender) --> Message Broker --> B(Receiver)
@@ -156,7 +152,7 @@ The Message Broker pattern is a messaging pattern that involves the use of a mes
 
 The diagram shows how the sender (A) sends a message to the message broker, which then routes the message to the receiver (B).
 
-**Use Cases**: Provide scenarios where this pattern is applicable.
+**Use Cases**:
 
 Microservices Communication
 - Scenario: In a microservices architecture, different services need to communicate with each other to coordinate tasks.
@@ -169,14 +165,14 @@ Why Use a Message Broker: Microservices are decoupled, allowing independent scal
 Briefly mention other common integration patterns, such as:
 
 **Publish-Subscribe**
-- Overview: In the Publish-Subscribe pattern, a producer (publisher) sends messages to multiple consumers (subscribers) through a messaging system. Instead of sending messages directly to specific consumers, the messages are sent to a topic or channel. Subscribers can register their interest in certain types of messages, and the messaging system delivers messages only to those who are subscribed.
+- In the Publish-Subscribe pattern, a producer (publisher) sends messages to multiple consumers (subscribers) through a messaging system. Instead of sending messages directly to specific consumers, the messages are sent to a topic or channel. Subscribers can register their interest in certain types of messages, and the messaging system delivers messages only to those who are subscribed.
 
 Use Cases:
 - Real-time notifications (e.g., stock price updates, news alerts).
 - Event-driven systems where multiple services need to react to the same event (e.g., user signup triggering notifications, analytics, and logging).
 
 **Request-Reply**
-- Overview: In the Request-Reply pattern, a client (requester) sends a request to a service (replier), and the service processes the request and sends back a response. This is a synchronous communication pattern, often used when the requester expects a result or acknowledgment.
+- In the Request-Reply pattern, a client (requester) sends a request to a service (replier), and the service processes the request and sends back a response. This is a synchronous communication pattern, often used when the requester expects a result or acknowledgment.
 
 Use Cases:
 - Web services where a client sends a request to retrieve data (e.g., API calls to retrieve user info, payment verification).
