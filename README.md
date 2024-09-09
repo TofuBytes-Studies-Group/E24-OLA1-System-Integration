@@ -1,5 +1,5 @@
 # E24-OLA1-System-Integration
-Research Task
+Research Task by Jamie, Helena & Isak
 
 # Table of Contents
 
@@ -42,7 +42,6 @@ This section outlines the tools and technologies used throughout the project for
 - **Google Slides**: For creating slides and visual aids to enhance the presentation.
 
 ## What is Enterprise Integration?
-Define Enterprise Integration and discuss its significance in building scalable, distributed applications. Include key concepts and goals, such as interoperability, scalability, and flexibility.
 #### Data-centric integration
 - **Data-centric integration is fundamentally about ensuring data consistency and accuracy**, it tends to be more naturally aligned with monolithic architectures because of their inherent centralized control over data.
 #### Event Driven Integration
@@ -59,8 +58,6 @@ Define Enterprise Integration and discuss its significance in building scalable,
 
 ## Architectural Styles
 ### Monolithic Architecture
-Explain what Monolithic Architecture is, including its benefits and challenges. Provide examples of where it might still be relevant today.
-
 In a monolithic architecture, the entire application is built as a single unit, typically comprising three main components: the user interface, server-side processing, and the database. This approach has several advantages, such as simplicity, ease of development, and deployment. However, it also poses challenges in terms of scalability, maintainability, and flexibility.
 
 Some of the cons of using a monolithic architecture include:
@@ -80,8 +77,6 @@ Monolithic architecture are used in industries such as:
 
 
 ### Microservices Architecture
-Discuss the Microservices approach, focusing on its advantages over monolithic systems, such as scalability and independence of services. Include examples of industries or companies where Microservices are heavily used.
-
 In a microservices architecture, an application is broken down into a set of small, independent services that communicate with each other through APIs. Each service is responsible for a specific function or feature, and can be developed, deployed, and scaled independently of the other services. 
 
 Some of the cons of using a microservices architecture include:
@@ -164,8 +159,6 @@ Example: A user registration service sends a message to notify other services (e
 Why Use a Message Broker: Microservices are decoupled, allowing independent scaling, error isolation, and asynchronous communication. The broker routes messages from the registration service to the email and analytics services without them needing to know about each other.
 
 ### Other Patterns
-Briefly mention other common integration patterns, such as:
-
 **Publish-Subscribe**
 - In the Publish-Subscribe pattern, a producer (publisher) sends messages to multiple consumers (subscribers) through a messaging system. Instead of sending messages directly to specific consumers, the messages are sent to a topic or channel. Subscribers can register their interest in certain types of messages, and the messaging system delivers messages only to those who are subscribed.
 
@@ -207,4 +200,18 @@ Microservices:
 In a monolithic architecture the application is a single deployable component and all operations are handled within that single component. 
 
 ## Conclusion
-Summarize the key points discussed in the report. Reinforce the importance of understanding and applying Enterprise Integration principles in real-world scenarios.
+
+The shift from monolithic to microservices architecture represents a critical evolution in enterprise integration, aimed at addressing the increasing demands for scalability, maintainability, and resilience. Monolithic architectures, while simpler to develop and deploy initially, tend to encounter challenges in terms of scaling, flexibility, and resource management as applications grow. Conversely, microservices allow for more granular control, where independent services can be developed, deployed, and scaled separately. This makes them highly suited for modern, agile development environments.
+
+Reddit and eBay serve as prime examples of organizations that have transitioned from monolithic systems to microservices. In Reddit's case, adopting microservices allowed for better system scalability and maintainability, addressing issues tied to rapid user growth. eBay faced similar challenges and utilized the **strangler pattern** to gradually migrate its monolithic application to a microservices architecture without disrupting its ongoing operations [1] [2].
+
+While the advantages of microservices—such as improved fault isolation, development agility, and resource optimization—are substantial, the transition is not without its challenges. Organizations must navigate complexities in data management, service communication, and operational overhead. However, with strategies like **incremental refactoring** and **domain-driven design**, the risks can be mitigated, ensuring a smooth migration.
+
+Ultimately, enterprise integration strategies—whether through monolithic or microservices architectures—must align with the unique requirements of the business. By understanding the strengths and limitations of both approaches, organizations can make informed decisions that enhance their scalability, flexibility, and overall system performance.
+
+---
+
+[1]: https://blog.bytebytego.com/p/reddits-architecture-the-evolutionary
+[2]: https://ecommerce.cloudflight.io/blog/10-companies-that-implemented-the-microservice-architecture-and-paved-the-way-for-others
+
+
