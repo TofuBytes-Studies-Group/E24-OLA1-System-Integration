@@ -44,7 +44,7 @@ This section outlines the tools and technologies used throughout the project for
 ## What is Enterprise Integration?
 Define Enterprise Integration and discuss its significance in building scalable, distributed applications. Include key concepts and goals, such as interoperability, scalability, and flexibility.
 #### Data-centric integration
-Data-centric integration is fundamentally about ensuring data consistency and accuracy, it tends to be more naturally aligned with monolithic architectures because of their inherent centralized control over data.
+- **Data-centric integration is fundamentally about ensuring data consistency and accuracy**, it tends to be more naturally aligned with monolithic architectures because of their inherent centralized control over data.
 #### Event Driven Integration
 - **Promotes Loose couplings between components**, allowing them to operate independently and gives options for scalability.  Making it suitable for Micro Services.
 #### Application-centric Integration
