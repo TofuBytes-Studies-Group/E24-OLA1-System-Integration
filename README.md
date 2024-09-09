@@ -18,8 +18,10 @@ Research Task
    - [Message Broker](#message-broker)
    - [Other Patterns](#other-patterns)
 
-- [Diagramming Standards](#diagramming-standards)
-   - [UML](#uml)
+- [Diagrams](#diagrams)
+   - [Diagram Microservices Architecture](#diagram-microservices-architecture)
+   - [Diagram Monolith Architecture](#diagram-monolithic-architecture)
+  
 
 - [Conclusion](#conclusion)
 
@@ -31,22 +33,20 @@ Research Task
 ## Technology Stack
 This section outlines the tools and technologies used throughout the project for research, documentation, development, and collaboration.
 - **Git**: Used for version control to track changes, manage contributions, and maintain the history of the project.
-- **GitHub/GitLab**: The platform for hosting the repository, managing issues, and collaborating with team members.
+- **GitHub**: The platform for hosting the repository, managing issues, and collaborating with team members.
 - **Visual Studio Code**: The primary text editor used for writing the report in Markdown, embedding diagrams, and formatting code snippets.
 - **Markdown**: Chosen for writing the report due to its simplicity, readability, and compatibility with version control systems.
-- **Mermaid**: Used for creating diagrams directly within Markdown files, allowing for easy visualization of integration patterns and architectural concepts.
-- **DrawIO**: An online tool used for collaborative diagramming, especially for more complex diagrams that require interactive editing.
 - **Messenger/Discord**: Used for team communication, coordinating research efforts, and sharing resources.
 - **Google Scholar, YouTube, Medium**: Sources for gathering current information on Enterprise Integration and related topics.
-- **Docker**: Utilized for containerizing and testing microservices to demonstrate integration patterns like Pipes and Filters.
-- **C#, osv osv**: Programming language and framework chosen for implementing integration patterns and providing working examples.
 - **IPhone 11 Pro Max Camera, Cap Cut for Editing**: Used to record the 5-minute video presentation summarizing the key findings from the report.
 - **Google Slides**: For creating slides and visual aids to enhance the presentation.
 
 ## What is Enterprise Integration?
 Define Enterprise Integration and discuss its significance in building scalable, distributed applications. Include key concepts and goals, such as interoperability, scalability, and flexibility.
+#### Data-centric integration
+? 
 #### Event Driven Integration
-- **Promotes Loose couplings between components**, allowing them to operate independently. Scalability. Suitable for Micro Services.
+- **Promotes Loose couplings between components**, allowing them to operate independently and gives options for scalability.  Making it suitable for Micro Services.
 #### Application-centric Integration
 - **Particularly relevant in modern software development**, where building applications as a set of loosely coupled and independently deployable **components** is essential for scalability, maintainability and agility. It aligns well with **contemporary microservices (breaking larger problems into smaller chunks/services** architecture and API-driven development practices.
 
@@ -106,11 +106,9 @@ The monolithic architecture works good as a combined unit, where all the functio
 
 ## Integration Patterns
 ### Pipes and Filters
-**Overview**: Describe the Pipes and Filters pattern. 
+
 
 The pipes and filters pattern is a design pattern that allows you to process data in a series of steps, where each step is a filter that transforms the data in some way. The filters are connected by pipes, which are used to pass data from one filter to the next. This pattern is commonly used in scenarios where you need to process data in a modular and extensible way, such as in data processing pipelines or data transformation workflows.
-
-**Diagram**: Insert a diagram illustrating how Pipes and Filters work.
 
 ```
   A[Input] --> B(Filter1)
@@ -121,7 +119,7 @@ The pipes and filters pattern is a design pattern that allows you to process dat
 
 This diagram shows a simple example of the pipes and filters pattern, where data flows from an input source (A) through a series of filters (B, C, D) to an output destination (E).
 
-**Use Cases**: Explain where and why this pattern might be used.
+**Use Cases**:
 
 Image Processing Pipelines
 - Scenario: Editing images by applying multiple transformations in a sequence.
@@ -147,10 +145,8 @@ Example:
 Why Pipes and Filters? Each step (collect, match, alert, store) is independent, making it easy to modify or expand the pipeline as new log patterns or analytics needs emerge.
   
 ### Message Broker
-**Overview**: Describe the Message Broker pattern.
-The Message Broker pattern is a messaging pattern that involves the use of a message broker to facilitate communication between different components of a system. In this pattern, components communicate by sending messages to a central message broker, which then routes the messages to the appropriate recipients. This decouples the sender and receiver, allowing them to communicate asynchronously without being directly connected.
 
-**Diagram**: Include a diagram to represent the Message Broker pattern.
+The Message Broker pattern is a messaging pattern that involves the use of a message broker to facilitate communication between different components of a system. In this pattern, components communicate by sending messages to a central message broker, which then routes the messages to the appropriate recipients. This decouples the sender and receiver, allowing them to communicate asynchronously without being directly connected.
 
 ```
   A(Sender) --> Message Broker --> B(Receiver)
@@ -158,7 +154,7 @@ The Message Broker pattern is a messaging pattern that involves the use of a mes
 
 The diagram shows how the sender (A) sends a message to the message broker, which then routes the message to the receiver (B).
 
-**Use Cases**: Provide scenarios where this pattern is applicable.
+**Use Cases**:
 
 Microservices Communication
 - Scenario: In a microservices architecture, different services need to communicate with each other to coordinate tasks.
@@ -171,28 +167,22 @@ Why Use a Message Broker: Microservices are decoupled, allowing independent scal
 Briefly mention other common integration patterns, such as:
 
 **Publish-Subscribe**
-- Overview: In the Publish-Subscribe pattern, a producer (publisher) sends messages to multiple consumers (subscribers) through a messaging system. Instead of sending messages directly to specific consumers, the messages are sent to a topic or channel. Subscribers can register their interest in certain types of messages, and the messaging system delivers messages only to those who are subscribed.
+- In the Publish-Subscribe pattern, a producer (publisher) sends messages to multiple consumers (subscribers) through a messaging system. Instead of sending messages directly to specific consumers, the messages are sent to a topic or channel. Subscribers can register their interest in certain types of messages, and the messaging system delivers messages only to those who are subscribed.
 
 Use Cases:
 - Real-time notifications (e.g., stock price updates, news alerts).
 - Event-driven systems where multiple services need to react to the same event (e.g., user signup triggering notifications, analytics, and logging).
 
 **Request-Reply**
-- Overview: In the Request-Reply pattern, a client (requester) sends a request to a service (replier), and the service processes the request and sends back a response. This is a synchronous communication pattern, often used when the requester expects a result or acknowledgment.
+- In the Request-Reply pattern, a client (requester) sends a request to a service (replier), and the service processes the request and sends back a response. This is a synchronous communication pattern, often used when the requester expects a result or acknowledgment.
 
 Use Cases:
 - Web services where a client sends a request to retrieve data (e.g., API calls to retrieve user info, payment verification).
 - Database queries where a request for data is followed by an immediate reply containing the result.
 
-## Diagramming Standards
-### UML
-**Explanation**: Describe UML (Unified Modeling Language) and its relevance in Enterprise Integration.
+## Diagrams
 
-UML is widely used in Enterprise Integration, because it provides a set of diagram types for various aspects of software development, including system architecture, class structure, sequence of operations, and more. UML diagrams help developers and architects visualize the structure and behavior of a system, making it easier to communicate design decisions and understand complex systems.
-
-**Examples**: Provide a simple UML diagram relevant to our topic.
-
-#### DrawIO Diagram Microservices Architecture
+### Diagram Microservices Architecture
 ![Microservice diagram](Images/Microservice_solution.PNG)
 <a href="https://microservices.io/patterns/microservices.html" 
            target="_blank">Source
@@ -203,30 +193,18 @@ API Gateway:
 - Acts as the entry point for all client requests, routing them to the appropriate microservices. It handles cross-cutting concerns such as authentication, load balancing, and request routing.
 
 Microservices:
-- Product Service: Manages the product catalog, including adding and updating flower information. It interacts with the Product Database.
-- Order Service: Handles the creation, tracking, and management of orders. It interacts with the Order Database.
-- Customer Service: Manages customer profiles and information. It interacts with the Customer Database.
-- Payment Service: Processes payments and handles financial transactions. It interacts with the Payment Database.
-
-Databases:
-- Product Database: Stores information about flowers and products.
-- Order Database: Contains details about orders and their statuses.
-- Customer Database: Maintains customer profiles and purchase history.
-- Payment Database: Records payment transactions.
+- Delivery Service: Handles the delivery and which courier the delivery is the delivered through.
+- Order Service: Handles the creation and management of orders. 
+- Customer Service: Manages customer profiles and information. 
 
 
-#### DrawIO Diagram Monolithic Architecture
+### Diagram Monolithic Architecture
 ![Monolithic diagram](Images/Monolithic_solution.PNG)
 <a href="https://microservices.io/patterns/monolithic.html" 
            target="_blank">Source
 </a> 
 
-Flower Shop Application:
-- The entire application is a single, monolithic unit. It integrates all functionalities into one codebase, split up in different classes.
-
-Modules: Modules are the same as in the microservice architecture, but they are all part of the same application.
-
-Databases: The application uses a single database to store all data. The database is the same as the microservice architecture.
+In a monolithic architecture the application is a single deployable component and all operations are handled within that single component. 
 
 ## Conclusion
 Summarize the key points discussed in the report. Reinforce the importance of understanding and applying Enterprise Integration principles in real-world scenarios.
