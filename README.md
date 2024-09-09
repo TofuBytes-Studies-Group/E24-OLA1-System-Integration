@@ -1,6 +1,10 @@
 # E24-OLA1-System-Integration
 Research Task by Jamie, Helena & Isak
 
+### Watch the Video Summary: 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/QjGu_uiMG4g/0.jpg)](https://www.youtube.com/watch?v=QjGu_uiMG4g)
+
+
 # Table of Contents
 
 - [Introduction](#introduction)
