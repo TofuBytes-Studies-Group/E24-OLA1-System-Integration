@@ -73,7 +73,8 @@ Before answering the questions, ensure you have gone through the following resou
 
 ### Q8: Pattern Languages
 - **Objective**: Summarize the core concepts of pattern languages as described by Gregor Hohpe.
-  - Discuss the requirements for patterns to be useful (see ~45 minutes into the video).
+
+  - For patterns to be truly useful, they need to be clear and understandable, allowing practitioners to easily grasp and communicate the ideas they represent. They must be proven solutions, drawn from real-world experiences, demonstrating their effectiveness in addressing recurring problems. It’s crucial that patterns are context-aware, clearly defining the situations where they are most applicable, so they are used appropriately. Additionally, useful patterns should document both their benefits and potential trade-offs, helping practitioners make informed decisions. Reusability is also key—patterns should be general enough to apply across different scenarios while still providing specific, actionable guidance. Finally, patterns are most effective when they are part of a larger pattern language, connecting with other patterns to provide a comprehensive roadmap for solving complex problems.
 
 ### Q9: Strangler Pattern
 - **Objective**: Explain the *Strangler Pattern* as described in Simon Rohrer’s article.
