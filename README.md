@@ -67,9 +67,67 @@ Before answering the questions, ensure you have gone through the following resou
   - Use the PowerPoint slides on integration patterns as your reference.
   - Provide real-world use cases and, optionally, code examples for these patterns.
 
+#### 1. Pipes and Filters
+**Description**: In the pipes and filters pattern, data is processed through a series of filters (processing stages) connected by pipes (communication channels). Each filter performs a specific transformation or processing task on the data.
+
+**Use Case**: Data Processing Pipeline
+- **Scenario**: An ETL (Extract, Transform, Load) system for data warehousing.
+- **Example**: Data is extracted from various sources (pipes), passed through filters for cleaning, transformation, and enrichment, and then loaded into a database. Each filter handles a distinct processing step, such as removing duplicates, converting formats, or aggregating data.
+
+#### 2. Request-Reply
+**Description**: In the request-reply pattern, a sender sends a request message to a service and expects a reply message in return. This is a synchronous interaction where the sender waits for the response before continuing.
+
+**Use Case**: Online Payment Processing
+- **Scenario**: A web application processes credit card payments.
+- **Example**: When a user submits payment details, the application sends a request to a payment gateway for authorization. The payment gateway processes the request and replies with a confirmation or error message. The web application waits for this response before informing the user of the payment status.
+
+#### 3. Message Routing
+**Description**: In the message routing pattern, messages are directed to specific destinations based on criteria such as message content, metadata, or routing rules. This helps in directing messages to appropriate services or endpoints.
+
+**Use Case**: Order Processing System
+- **Scenario**: An e-commerce platform with different fulfillment centers.
+- **Example**: When an order is placed, the system routes the order message to the appropriate fulfillment center based on factors like the customer’s location or the type of product. Routing rules ensure that each order is processed by the correct center.
+
+#### 4. Publish-Subscribe
+**Description**: In the publish-subscribe pattern, a publisher sends messages to a topic or channel without knowing the subscribers. Subscribers express interest in specific topics and receive messages related to those topics.
+
+**Use Case**: News Distribution
+- **Scenario**: A news website distributing updates to subscribers.
+- **Example**: A news publisher posts updates on various topics (e.g., sports, politics) to different channels. Subscribers interested in sports receive updates on sports news, while those interested in politics get updates on political news.
+
+#### 5. Point-to-Point
+**Description**: In the point-to-point pattern, messages are sent directly from a sender to a specific receiver. Each message has a single destination, and the receiver processes the message.
+
+**Use Case**: Task Management System
+- **Scenario**: An application for managing background tasks or jobs.
+- **Example**: A job scheduling system sends task messages to specific worker services. Each task message is intended for one worker, which processes the task and reports back the result. This ensures that each task is handled by a single worker service.
+
+
 ### Q7: Messaging vs Conversation Architectures
 - **Objective**: Discuss the difference between messaging and conversation architectures as explained by Gregor Hohpe.
   - Focus on challenges like pub-sub vs. subscribe-notify models (starting at 18 minutes in *Enterprise Integration Patterns 2*).
+
+#### Messaging Patterns (E-mail system, for example):
+- Focus on message
+- Follows the message
+- One-way
+- Deals with transport
+- 'Stateless'
+
+#### Conversation Patterns (Chatbot, for example):
+- Focus on participants
+- Follows time
+- Two- / multi-way
+- Deals with resources
+- 'Stateful'
+
+#### Challenges for Conversation-Based Patterns:
+- You have to wait for a response before proceeding.
+
+#### Difference Between Pub-Sub and Subscribe-Notify:
+- **Pub-sub:** The publish-subscribe pattern is a messaging pattern where publishers (senders) is sending messages without knowing who their subscribers (receivers) are. Similarly, subscribers receive messages from a broker or topic, without knowing who the publisher is.
+
+- **Subscribe-notify:** Subscribe-notify is a pattern where clients subscribe to certain events or changes, and they are notified whenever there is an update. It is similar to pub-sub but tends to be more specific to event-based communication, where the main focus is notifying subscribers about specific state changes.
 
 ### Q8: Pattern Languages
 - **Objective**: Summarize the core concepts of pattern languages as described by Gregor Hohpe.
@@ -83,6 +141,20 @@ Before answering the questions, ensure you have gone through the following resou
 ### Q10: Core Architecture Diagrams
 - **Objective**: List and explain the three core architecture diagrams described by Jesper Lowgren.
   - Provide examples of each diagram and explain their roles in solution architecture.
+
+
+#### Solution Overview
+- **Translates business requirements to use cases**
+- **Has conceptual architectures that describe core processes and interactions between people, systems, and other technologies**
+
+#### Landscape Diagram
+- Describes how the application and database interact
+- Basically infrastructure
+
+#### Solution Design
+- Describes the solution context, including interactions between people, processes, data, applications, and technical infrastructure
+
+The **Solution Overview** helps in understanding the system's functionality from a business perspective. The **Landscape Diagram** provides insights into infrastructure and integrations, while the **Solution Design Diagram** offers a detailed view of how everything fits together in practice.
 
 
 ### Due Date:
