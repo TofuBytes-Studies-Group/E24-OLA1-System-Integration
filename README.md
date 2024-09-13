@@ -55,8 +55,7 @@ Before answering the questions, ensure you have gone through the following resou
   - Focus on his claims around centralization benefits (starting at 23:30 in *Practical Architecture*).
 
 ### Q4: ABCDE of Modern Architecture
-- **Objective**: Analyze Simon Rohrer’s ABCDE comparison of modern vs. legacy architectures.
-  - Provide your opinion on whether his arguments for modern architecture are persuasive.
+Do you find his arguments persuasive and if so why?
 
 - A) **Aligning values, people, and technology.** This makes sense—if the whole team is aligned, it leads to better cooperation within the team and across areas of expertise, ensuring that all team members are on the same page.
 
@@ -71,8 +70,10 @@ Before answering the questions, ensure you have gone through the following resou
 His arguments are persuasive, and even without having used them, they make a lot of sense. They focus heavily on community within the team and on CI/CD (continuous integration and continuous delivery/deployment).
 
 ### Q5: Continuous Conversation and DevOps
-- **Objective**: Summarize Simon Rohrer’s explanation of the “Continuous Conversation” and its benefits to Saxo Bank.
-  - Explain its connection to the DevOps Infinity Loop.
+what ways does he say it benefits Saxo Bank? How does he connect the Continuous Conversation to the Devops Infinity Loop.
+
+He says it helps to talk about what makes a better design, less complex, and more simple design. He says this works well in the DevOps loop because of it is a continuous conversation, the conversation will follow around the DevOps loop. He also says it works well at large scale, where you have teams of teams (teams within larger teams).
+
 
 ### Q6: Messaging Integration Patterns
 - **Objective**: Identify and describe five messaging integration patterns, including the *Pipes and Filters* and *Request-Reply* patterns.
