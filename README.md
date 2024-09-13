@@ -58,6 +58,18 @@ Before answering the questions, ensure you have gone through the following resou
 - **Objective**: Analyze Simon Rohrer’s ABCDE comparison of modern vs. legacy architectures.
   - Provide your opinion on whether his arguments for modern architecture are persuasive.
 
+- A) **Aligning values, people, and technology.** This makes sense—if the whole team is aligned, it leads to better cooperation within the team and across areas of expertise, ensuring that all team members are on the same page.
+
+- B) **Better, value, sooner, safer, happier.** "Better" means delivering the best possible quality of the product. In the video, he explains "value" as what makes you special. "Sooner" refers to learn faster and delivering value faster. "Safer" obviously refers to security and privacy. "Happier" means making everyone involved with the product happier, not just the customer, but also the employees and even the environment/climate.
+
+- C) **Continuous Conversational Governance.** This is about having ongoing conversations about the architecture and involving every member in the discussion. This approach allows for a more agile design of the architecture.
+
+- D) **DevOps at enterprise scale.** This refers to implementing DevOps on a large, enterprise-wide scale.
+
+- E) **Evolutionary enterprise architecture.** This focuses on continuous improvement over time.
+
+His arguments are persuasive, and even without having used them, they make a lot of sense. They focus heavily on community within the team and on CI/CD (continuous integration and continuous delivery/deployment).
+
 ### Q5: Continuous Conversation and DevOps
 - **Objective**: Summarize Simon Rohrer’s explanation of the “Continuous Conversation” and its benefits to Saxo Bank.
   - Explain its connection to the DevOps Infinity Loop.
