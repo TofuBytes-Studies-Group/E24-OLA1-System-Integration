@@ -90,8 +90,11 @@ He says it helps to talk about what makes a better design, less complex, and mor
   - For patterns to be truly useful, they need to be clear and understandable, allowing practitioners to easily grasp and communicate the ideas they represent. They must be proven solutions, drawn from real-world experiences, demonstrating their effectiveness in addressing recurring problems. It’s crucial that patterns are context-aware, clearly defining the situations where they are most applicable, so they are used appropriately. Additionally, useful patterns should document both their benefits and potential trade-offs, helping practitioners make informed decisions. Reusability is also key—patterns should be general enough to apply across different scenarios while still providing specific, actionable guidance. Finally, patterns are most effective when they are part of a larger pattern language, connecting with other patterns to provide a comprehensive roadmap for solving complex problems.
 
 ### Q9: Strangler Pattern
-- **Objective**: Explain the *Strangler Pattern* as described in Simon Rohrer’s article.
-  - Discuss why it is considered complex and how it helps in moving away from legacy systems.
+he goes in to more detail about the ABCDE of modern EA he discusses the ‘strangler’ pattern for moving away from legacy systems – why is this seen as a complex problem and what does the 
+strangler pattern do to help?
+
+Going from a legacy system to modern enterprise architecture is complex because you often want the system to work while transitioning, and it takes time transitioning. However, the Strangler Pattern, in combination with refactoring and anti-corruption layers, helps to upgrade a legacy system to modern enterprise architecture. This is done in small pieces at a time to reduce complexity, all while the legacy system still runs the functionalities that have not been upgraded yet.
+ 
 
 ### Q10: Core Architecture Diagrams
 - **Objective**: List and explain the three core architecture diagrams described by Jesper Lowgren.
@@ -111,5 +114,6 @@ He says it helps to talk about what makes a better design, less complex, and mor
   - *Enterprise Integration Patterns* by Gregor Hohpe
 - Additional reading:
   - Simon Rohrer’s article on [Modern Enterprise Architecture](https://modernenterprisearchitecture.substack.com/p/modern-enterprisearchitecture-a)
+  - [Strangler pattern wikipedia](https://en.wikipedia.org/wiki/Strangler_fig_pattern)
 
 ---
