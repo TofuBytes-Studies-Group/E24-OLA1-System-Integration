@@ -55,12 +55,25 @@ Before answering the questions, ensure you have gone through the following resou
   - Focus on his claims around centralization benefits (starting at 23:30 in *Practical Architecture*).
 
 ### Q4: ABCDE of Modern Architecture
-- **Objective**: Analyze Simon Rohrer’s ABCDE comparison of modern vs. legacy architectures.
-  - Provide your opinion on whether his arguments for modern architecture are persuasive.
+Do you find his arguments persuasive and if so why?
+
+- A) **Aligning values, people, and technology.** This makes sense—if the whole team is aligned, it leads to better cooperation within the team and across areas of expertise, ensuring that all team members are on the same page.
+
+- B) **Better, value, sooner, safer, happier.** "Better" means delivering the best possible quality of the product. In the video, he explains "value" as what makes you special. "Sooner" refers to learn faster and delivering value faster. "Safer" obviously refers to security and privacy. "Happier" means making everyone involved with the product happier, not just the customer, but also the employees and even the environment/climate.
+
+- C) **Continuous Conversational Governance.** This is about having ongoing conversations about the architecture and involving every member in the discussion. This approach allows for a more agile design of the architecture.
+
+- D) **DevOps at enterprise scale.** This refers to implementing DevOps on a large, enterprise-wide scale.
+
+- E) **Evolutionary enterprise architecture.** This focuses on continuous improvement over time.
+
+His arguments are persuasive, and even without having used them, they make a lot of sense. They focus heavily on community within the team and on CI/CD (continuous integration and continuous delivery/deployment).
 
 ### Q5: Continuous Conversation and DevOps
-- **Objective**: Summarize Simon Rohrer’s explanation of the “Continuous Conversation” and its benefits to Saxo Bank.
-  - Explain its connection to the DevOps Infinity Loop.
+what ways does he say it benefits Saxo Bank? How does he connect the Continuous Conversation to the Devops Infinity Loop.
+
+He says it helps to talk about what makes a better design, less complex, and more simple design. He says this works well in the DevOps loop because of it is a continuous conversation, the conversation will follow around the DevOps loop. He also says it works well at large scale, where you have teams of teams (teams within larger teams).
+
 
 ### Q6: Messaging Integration Patterns
 - **Objective**: Identify and describe five messaging integration patterns, including the *Pipes and Filters* and *Request-Reply* patterns.
@@ -77,8 +90,11 @@ Before answering the questions, ensure you have gone through the following resou
   - For patterns to be truly useful, they need to be clear and understandable, allowing practitioners to easily grasp and communicate the ideas they represent. They must be proven solutions, drawn from real-world experiences, demonstrating their effectiveness in addressing recurring problems. It’s crucial that patterns are context-aware, clearly defining the situations where they are most applicable, so they are used appropriately. Additionally, useful patterns should document both their benefits and potential trade-offs, helping practitioners make informed decisions. Reusability is also key—patterns should be general enough to apply across different scenarios while still providing specific, actionable guidance. Finally, patterns are most effective when they are part of a larger pattern language, connecting with other patterns to provide a comprehensive roadmap for solving complex problems.
 
 ### Q9: Strangler Pattern
-- **Objective**: Explain the *Strangler Pattern* as described in Simon Rohrer’s article.
-  - Discuss why it is considered complex and how it helps in moving away from legacy systems.
+he goes in to more detail about the ABCDE of modern EA he discusses the ‘strangler’ pattern for moving away from legacy systems – why is this seen as a complex problem and what does the 
+strangler pattern do to help?
+
+Going from a legacy system to modern enterprise architecture is complex because you often want the system to work while transitioning, and it takes time transitioning. However, the Strangler Pattern, in combination with refactoring and anti-corruption layers, helps to upgrade a legacy system to modern enterprise architecture. This is done in small pieces at a time to reduce complexity, all while the legacy system still runs the functionalities that have not been upgraded yet.
+ 
 
 ### Q10: Core Architecture Diagrams
 - **Objective**: List and explain the three core architecture diagrams described by Jesper Lowgren.
@@ -98,5 +114,6 @@ Before answering the questions, ensure you have gone through the following resou
   - *Enterprise Integration Patterns* by Gregor Hohpe
 - Additional reading:
   - Simon Rohrer’s article on [Modern Enterprise Architecture](https://modernenterprisearchitecture.substack.com/p/modern-enterprisearchitecture-a)
+  - [Strangler pattern wikipedia](https://en.wikipedia.org/wiki/Strangler_fig_pattern)
 
 ---
