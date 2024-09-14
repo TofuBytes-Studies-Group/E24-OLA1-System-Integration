@@ -100,9 +100,21 @@ The book also introduces three key interaction modes between teams:
 
 
 
-### Q3: Centralization in Architecture
-- **Objective**: Explain the reasoning behind Stefan Tilkov’s argument for centralizing certain architectural decisions.
-  - Focus on his claims around centralization benefits (starting at 23:30 in *Practical Architecture*).
+### Q3: Centralization in Architecture 
+***Stefan Tilkov explains why some things are best done centrally (for example at 23 min 30 seconds). Why do you think he is saying this? What does he claim are the benefits?***
+
+From what we could gather from his talk, is what he means by this is that some things are best done centrally. He suggests that doing so helps address challenges in complex, large-scale systems and organizations. The key benefits he outlines were:
+
+- **Consistency**: Ensuring uniform quality and standards across the organization.
+- **Efficiency**: Reducing duplication and costs by managing resources centrally.
+- **Specialization and Expertise**: Centralizing knowledge and skills to handle complex tasks.
+- **Coordination**: Improving alignment and integration of complex systems.
+
+Stefan also highlights how centralization can enable individuals or small teams to act independently and make quick, efficient decisions. This decentralized decision-making is possible because the core functions are centralized, allowing for more focused, consistent guidance across the organization.
+
+Essentially, he advocates for centralizing specific areas to achieve consistency, efficiency, and specialization, ultimately improving quality, reducing costs, and enhancing security and coordination.
+
+In summary, he thinks centralization is important because it ensures uniform quality and compliance with standards, enables more efficient use of resources, pools specialized expertise, and enhances coordination across different parts of the organization. This leads to better collaboration and smoother functioning within large systems and a happy Stefan (rip bless his soul).
 
 ### Q4: ABCDE of Modern Architecture
 - **Objective**: Analyze Simon Rohrer’s ABCDE comparison of modern vs. legacy architectures.
