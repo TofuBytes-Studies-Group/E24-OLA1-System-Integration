@@ -41,9 +41,36 @@ Before answering the questions, ensure you have gone through the following resou
 ## Assignment Questions
 
 ### Q1: Enterprise vs Solution Architecture
-- **Objective**: Explain the differences between Enterprise Architecture and Solution Architecture.
-  - Describe how these roles contribute to the design of large-scale systems.
-  - Reference the video: *Enterprise Architecture vs Solution Architecture*.
+
+So, from watching the video [Enterprise Architecture vs Solution Architecture](https://www.youtube.com/watch?v=v6xBGN2A0hM) he mentions that there are quite a few differences between **Enterprise Architecture (EA)** and **Solution Architecture (SA)** as far as we’ve been able to pick up. In frameworks he also mentions like TOGAF, architecture is split into four key levels. Three of these levels function within Enterprise Architecture:
+
+1. **Strategic Architecture**
+2. **Segment Architecture**
+3. **Capability Architecture**
+
+And then there’s the 4th level, which is **Solution Architecture**. Before diving into Solution Architecture, let’s go over the differences between these roles.
+
+Enterprise Architecture, especially within the first three levels, is all about strategy, long-term planning, and ensuring that the technology systems align with the business’s overall objectives. Think of **Strategic Architecture** as the top-level vision, defining where the organization wants to go. Then, **Segment Architecture** breaks this down into different parts or "segments" of the business, each with its own needs but all aligned with that top-level strategy. Finally, **Capability Architecture** focuses on what the organization *can* do, identifying the core competencies it needs to develop to meet those strategic goals.
+
+Now, when we get to **Solution Architecture**, the focus shifts from high-level planning to actual products and solutions. This is the stage where we specify the detailed implementation of the capabilities defined earlier in the enterprise architecture. Unlike the **Capability Architecture**, which defines what the organization needs to be capable of, **Solution Architecture** deals with the actual "how." It's where we start talking about the real-world systems and applications needed to deliver those capabilities.
+
+For example, in **Enterprise Architecture**, you wouldn’t necessarily discuss the specific details of an application. You’d instead focus on ensuring the right capabilities are in place, like moving towards cloud computing or building strong data management systems. However, when we step into **Solution Architecture**, we’re no longer just talking strategy—we’re specifying which technologies, platforms, or applications are required to bring those capabilities to life. This is where the **Solution Architect** comes in, designing systems that align with the broader goals laid out by the enterprise architects.
+
+In simple terms, **Enterprise Architecture** is about laying the roadmap, while **Solution Architecture** is about building the car that drives on that roadmap. EA operates at a higher, long-term strategic level, whereas SA gets into the nitty-gritty of delivering specific projects or products.
+
+ ### When designing large-scale systems, Enterprise Architecture (EA) and Solution Architecture (SA) contribute at different levels but are both essential.
+#### Enterprise Architecture (EA):
+EA focuses on the strategic, long-term vision, ensuring that all technology systems align with business objectives. It defines company-wide principles, such as system integration, technology standards, and security requirements. In large-scale systems, EA sets the architectural framework, ensuring that the system will integrate seamlessly into the organization’s broader ecosystem.
+
+#### Solution Architecture (SA):
+SA operates on a project-specific level, designing the technical solutions for individual systems within the framework set by EA. It specifies the technology stack, APIs, and detailed functional requirements, ensuring the system meets the business needs while adhering to enterprise guidelines.
+
+#### Collaboration:
+EA provides the roadmap, while SA delivers the detailed solutions that fit within that roadmap. Together, they ensure systems are scalable, aligned with - business goals, and technically sound.
+
+So to sum it up, **Enterprise Architecture** ensures the organization is heading in the right direction from a technology perspective. It defines the capabilities and frameworks that guide everything. **Solution Architecture**, on the other hand, takes those ideas and turns them into actionable solutions, detailing how specific technologies and systems will be implemented to meet the organization’s needs.
+
+
 
 ### Q2: Role of Teams in Modern Architecture
 - **Objective**: Discuss Stefan Tilkov's views on team roles in architecture.
