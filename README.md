@@ -73,9 +73,32 @@ So to sum it up, **Enterprise Architecture** ensures the organization is heading
 
 
 ### Q2: Role of Teams in Modern Architecture
-- **Objective**: Discuss Stefan Tilkov's views on team roles in architecture.
-  - Reference the video *Practical Architecture*.
-  - Summarize how *Team Topologies* views team structures and whether you agree with the importance of teams in project success.
+Stefan mentions in regard to role of teams in modern architecture he highlights the crucial role of team **organization** in modern architecture. 
+Tilkov argues that successful architecture goes beyond technical solutions and emphasizes the importance of how teams are structured and how they collaborate. 
+Essentially what he says is that he Values Explicit **Team-first approach** which is when you have larger teams of 50 or 25 people this Team-first idea enables the teams to do something that makes sense, that has purpose is the most motivating thing he continues.
+He also Values that the book is completely **technology agnostic** meaning no need micro services to do and the ability to choose any other techonology choice. the Book doesn't try to sell you anything in that regard.
+**Long-Lived teams instead of project thinking** is essentlially a shift form companies wherea project is something that is looked upon as an expection thats supposed to end as quickly as possible so you can get to the "state" of having no projects running. The shift he mentions is how the focus now is more on how "we" always can improve and always add new thing or features because the buisness is essentially depending on innovation within the services they support.
+And finally how **the book focuses on actual experiences, research and collaboration** is a key point he values.
+
+Stefan mentioned the book **Team Topologies.**
+now, **what Team topologies does the book describe and do we agree with from our own experience that the team is a core part of a successfull project?**
+Well, to build on that,the book describes four key team types:
+
+1. **Stream-aligned Teams**: These teams are responsible for a specific stream of work, such as a particular product or service.
+2. **Enabling Teams**: They focus on helping other teams gain skills and improve their capabilities without directly delivering software themselves.
+3. **Complicated Subsystem Teams**: These handle complex or specialized subsystems that require deep technical expertise.
+4. **Platform Teams**: They provide internal services and support, creating and maintaining the platforms used for software delivery.
+
+The book also introduces three key interaction modes between teams:
+
+1. **Collaboration**: Teams work closely together for short periods to achieve specific goals.
+2. **X-as-a-Service**: One team provides a service to another, often with a formal service contract.
+3. **Facilitation**: One team helps another improve its capabilities by offering guidance and support.
+
+**From our own experience**, we can confirm that these concepts are somwhat spot on. Effective team organization and interactions are indeed central to project success and for the team chemistry. When teams are well-structured and collaborate effectively, they can address challenges more efficiently, share and leverage specialized knowledge, and deliver better outcomes. So, aligning team roles and interactions with the principles described in **Team Topologies** **can** greatly enhance the success of a project. That being said. Its not as easy as just saying we agree or disagree. Yes this is true to a degree that allows and enables such teams to develop and prosper but this also depends on the members of the team themselves. all these points can collapse if the team doesn't know how to synchronize or collaborate and grow as a team. Our experiences do infact lean on the agreeable side, as when speaking of school projects and exam projects Teams obviously (meaning us the students delivering the projects) is a core part of the successfull project if not integral.
+
+
+
 
 ### Q3: Centralization in Architecture
 - **Objective**: Explain the reasoning behind Stefan Tilkov’s argument for centralizing certain architectural decisions.
