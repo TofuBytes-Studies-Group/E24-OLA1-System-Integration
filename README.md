@@ -103,7 +103,7 @@ The book also introduces three key interaction modes between teams:
 ### Q3: Centralization in Architecture 
 ***Stefan Tilkov explains why some things are best done centrally (for example at 23 min 30 seconds). Why do you think he is saying this? What does he claim are the benefits?***
 
-From what we could gather from his talk, is what he means by this is that some things are best done centrally. He suggests that doing so helps address challenges in complex, large-scale systems and organizations. The key benefits he outlines were:
+From what we could gather from his [presentation](https://www.youtube.com/watch?v=BNTt2aLB1tg&t=7s), is what he means by this is that some things are best done centrally. He suggests that doing so helps address challenges in complex, large-scale systems and organizations. The key benefits he outlines were:
 
 - **Consistency**: Ensuring uniform quality and standards across the organization.
 - **Efficiency**: Reducing duplication and costs by managing resources centrally.
