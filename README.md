@@ -139,22 +139,34 @@ Before answering the questions, ensure you have gone through the following resou
   - Discuss why it is considered complex and how it helps in moving away from legacy systems.
 
 ### Q10: Core Architecture Diagrams
-- **Objective**: List and explain the three core architecture diagrams described by Jesper Lowgren.
-  - Provide examples of each diagram and explain their roles in solution architecture.
 
+Jesper Lowgren explains three core diagrams that are essential for describing an architecture: the Solution Overview Diagram, the Landscape Diagram, and the Solution Design Diagram. Each of these plays a distinct role in mapping the solution from different perspectives: business, infrastructure, and technical design.
 
-#### Solution Overview
-- **Translates business requirements to use cases**
-- **Has conceptual architectures that describe core processes and interactions between people, systems, and other technologies**
+Jesper Lowgren explains three core diagrams that are essential for describing an architecture: the **Solution Overview Diagram**, the **Landscape Diagram**, and the **Solution Design Diagram**. Each of these plays a distinct role in mapping the solution from different perspectives: business, infrastructure, and technical design.
 
-#### Landscape Diagram
-- Describes how the application and database interact
-- Basically infrastructure
+#### 1. Solution Overview Diagram
+**Role**: This diagram translates high-level business requirements into use cases and conceptual architectures. It provides an overview of the core business processes and shows the interactions between people, systems, and technologies at a conceptual level.
 
-#### Solution Design
-- Describes the solution context, including interactions between people, processes, data, applications, and technical infrastructure
+- **Purpose**: To help business owners or project managers understand the system’s functionality and how it aligns with business needs.
+- **Content**: It highlights major components and interactions without going into too much technical detail. The diagram is often high-level and shows entities such as business functions, system components, user interactions, and data flow.
 
-The **Solution Overview** helps in understanding the system's functionality from a business perspective. The **Landscape Diagram** provides insights into infrastructure and integrations, while the **Solution Design Diagram** offers a detailed view of how everything fits together in practice.
+**Example**: A solution overview for a banking application may show how different customer segments interact with the system (e.g., loan processing, account management). It would represent customers, banking services, and communication channels (web, mobile, etc.) without going into technical implementation details.
+
+#### 2. Landscape Diagram
+**Role**: This diagram provides a more detailed view of the technical infrastructure and how the application interacts with databases, servers, and other components. It’s typically used to describe the architecture's physical or deployment aspects.
+
+- **Purpose**: To map out the underlying infrastructure, including hardware, software, networks, and external systems, ensuring that all components are aligned and properly integrated.
+- **Content**: The diagram includes databases, servers, networks, firewalls, and how they all connect. It often shows interactions between different applications and databases.
+
+**Example**: For a healthcare system, the landscape diagram might show the integration between the hospital's internal patient records database, external cloud services for storage, and third-party APIs for insurance processing. It would also map the physical locations of servers and the flow of data across secure networks.
+
+#### 3. Solution Design Diagram
+**Role**: The solution design diagram dives deeper into how specific components within the architecture interact. It is more detailed than the solution overview and includes a more technical perspective, showing interactions between people, processes, data, applications, and technical infrastructure.
+
+- **Purpose**: To provide a detailed representation of the solution’s functionality and technical execution. This diagram is typically used by technical architects and developers.
+- **Content**: It outlines the detailed interactions between the various systems, components, and data flows. It includes specifics such as APIs, services, business logic, and how data is exchanged between systems.
+
+**Example**: In a logistics management system, the solution design diagram would show how different systems—such as the warehouse management system, delivery tracking, and customer interface—communicate through APIs, how data flows between them, and what protocols are used for each interaction.
 
 
 ### Due Date:
