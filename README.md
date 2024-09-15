@@ -144,8 +144,6 @@ While both patterns involve subscriptions, the **pub-sub** pattern is more gener
 
 ### Q10: Core Architecture Diagrams
 
-Jesper Lowgren explains three core diagrams that are essential for describing an architecture: the Solution Overview Diagram, the Landscape Diagram, and the Solution Design Diagram. Each of these plays a distinct role in mapping the solution from different perspectives: business, infrastructure, and technical design.
-
 Jesper Lowgren explains three core diagrams that are essential for describing an architecture: the **Solution Overview Diagram**, the **Landscape Diagram**, and the **Solution Design Diagram**. Each of these plays a distinct role in mapping the solution from different perspectives: business, infrastructure, and technical design.
 
 #### 1. Solution Overview Diagram
