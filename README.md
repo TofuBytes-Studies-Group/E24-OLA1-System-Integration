@@ -41,18 +41,80 @@ Before answering the questions, ensure you have gone through the following resou
 ## Assignment Questions
 
 ### Q1: Enterprise vs Solution Architecture
-- **Objective**: Explain the differences between Enterprise Architecture and Solution Architecture.
-  - Describe how these roles contribute to the design of large-scale systems.
-  - Reference the video: *Enterprise Architecture vs Solution Architecture*.
+
+So, from watching the video [Enterprise Architecture vs Solution Architecture](https://www.youtube.com/watch?v=v6xBGN2A0hM) he mentions that there are quite a few differences between **Enterprise Architecture (EA)** and **Solution Architecture (SA)** as far as we’ve been able to pick up. In frameworks he also mentions like TOGAF, architecture is split into four key levels. Three of these levels function within Enterprise Architecture:
+
+1. **Strategic Architecture**
+2. **Segment Architecture**
+3. **Capability Architecture**
+
+And then there’s the 4th level, which is **Solution Architecture**. Before diving into Solution Architecture, let’s go over the differences between these roles.
+
+Enterprise Architecture, especially within the first three levels, is all about strategy, long-term planning, and ensuring that the technology systems align with the business’s overall objectives. Think of **Strategic Architecture** as the top-level vision, defining where the organization wants to go. Then, **Segment Architecture** breaks this down into different parts or "segments" of the business, each with its own needs but all aligned with that top-level strategy. Finally, **Capability Architecture** focuses on what the organization *can* do, identifying the core competencies it needs to develop to meet those strategic goals.
+
+Now, when we get to **Solution Architecture**, the focus shifts from high-level planning to actual products and solutions. This is the stage where we specify the detailed implementation of the capabilities defined earlier in the enterprise architecture. Unlike the **Capability Architecture**, which defines what the organization needs to be capable of, **Solution Architecture** deals with the actual "how." It's where we start talking about the real-world systems and applications needed to deliver those capabilities.
+
+For example, in **Enterprise Architecture**, you wouldn’t necessarily discuss the specific details of an application. You’d instead focus on ensuring the right capabilities are in place, like moving towards cloud computing or building strong data management systems. However, when we step into **Solution Architecture**, we’re no longer just talking strategy—we’re specifying which technologies, platforms, or applications are required to bring those capabilities to life. This is where the **Solution Architect** comes in, designing systems that align with the broader goals laid out by the enterprise architects.
+
+In simple terms, **Enterprise Architecture** is about laying the roadmap, while **Solution Architecture** is about building the car that drives on that roadmap. EA operates at a higher, long-term strategic level, whereas SA gets into the nitty-gritty of delivering specific projects or products.
+
+ ### When designing large-scale systems, Enterprise Architecture (EA) and Solution Architecture (SA) contribute at different levels but are both essential.
+#### Enterprise Architecture (EA):
+EA focuses on the strategic, long-term vision, ensuring that all technology systems align with business objectives. It defines company-wide principles, such as system integration, technology standards, and security requirements. In large-scale systems, EA sets the architectural framework, ensuring that the system will integrate seamlessly into the organization’s broader ecosystem.
+
+#### Solution Architecture (SA):
+SA operates on a project-specific level, designing the technical solutions for individual systems within the framework set by EA. It specifies the technology stack, APIs, and detailed functional requirements, ensuring the system meets the business needs while adhering to enterprise guidelines.
+
+#### Collaboration:
+EA provides the roadmap, while SA delivers the detailed solutions that fit within that roadmap. Together, they ensure systems are scalable, aligned with - business goals, and technically sound.
+
+So to sum it up, **Enterprise Architecture** ensures the organization is heading in the right direction from a technology perspective. It defines the capabilities and frameworks that guide everything. **Solution Architecture**, on the other hand, takes those ideas and turns them into actionable solutions, detailing how specific technologies and systems will be implemented to meet the organization’s needs.
+
+
 
 ### Q2: Role of Teams in Modern Architecture
-- **Objective**: Discuss Stefan Tilkov's views on team roles in architecture.
-  - Reference the video *Practical Architecture*.
-  - Summarize how *Team Topologies* views team structures and whether you agree with the importance of teams in project success.
+Stefan mentions in regard to role of teams in modern architecture he highlights the crucial role of team **organization** in modern architecture. 
+Tilkov argues that successful architecture goes beyond technical solutions and emphasizes the importance of how teams are structured and how they collaborate. 
+Essentially what he says is that he Values Explicit **Team-first approach** which is when you have larger teams of 50 or 25 people this Team-first idea enables the teams to do something that makes sense, that has purpose is the most motivating thing he continues.
+He also Values that the book is completely **technology agnostic** meaning no need micro services to do and the ability to choose any other techonology choice. the Book doesn't try to sell you anything in that regard.
+**Long-Lived teams instead of project thinking** is essentlially a shift form companies wherea project is something that is looked upon as an expection thats supposed to end as quickly as possible so you can get to the "state" of having no projects running. The shift he mentions is how the focus now is more on how "we" always can improve and always add new thing or features because the buisness is essentially depending on innovation within the services they support.
+And finally how **the book focuses on actual experiences, research and collaboration** is a key point he values.
 
-### Q3: Centralization in Architecture
-- **Objective**: Explain the reasoning behind Stefan Tilkov’s argument for centralizing certain architectural decisions.
-  - Focus on his claims around centralization benefits (starting at 23:30 in *Practical Architecture*).
+Stefan mentioned the book **Team Topologies.**
+now, **what Team topologies does the book describe and do we agree with from our own experience that the team is a core part of a successfull project?**
+Well, to build on that,the book describes four key team types:
+
+1. **Stream-aligned Teams**: These teams are responsible for a specific stream of work, such as a particular product or service.
+2. **Enabling Teams**: They focus on helping other teams gain skills and improve their capabilities without directly delivering software themselves.
+3. **Complicated Subsystem Teams**: These handle complex or specialized subsystems that require deep technical expertise.
+4. **Platform Teams**: They provide internal services and support, creating and maintaining the platforms used for software delivery.
+
+The book also introduces three key interaction modes between teams:
+
+1. **Collaboration**: Teams work closely together for short periods to achieve specific goals.
+2. **X-as-a-Service**: One team provides a service to another, often with a formal service contract.
+3. **Facilitation**: One team helps another improve its capabilities by offering guidance and support.
+
+**From our own experience**, we can confirm that these concepts are somwhat spot on. Effective team organization and interactions are indeed central to project success and for the team chemistry. When teams are well-structured and collaborate effectively, they can address challenges more efficiently, share and leverage specialized knowledge, and deliver better outcomes. So, aligning team roles and interactions with the principles described in **Team Topologies** **can** greatly enhance the success of a project. That being said. Its not as easy as just saying we agree or disagree. Yes this is true to a degree that allows and enables such teams to develop and prosper but this also depends on the members of the team themselves. all these points can collapse if the team doesn't know how to synchronize or collaborate and grow as a team. Our experiences do infact lean on the agreeable side, as when speaking of school projects and exam projects Teams obviously (meaning us the students delivering the projects) is a core part of the successfull project if not integral.
+
+
+
+
+### Q3: Centralization in Architecture 
+***Stefan Tilkov explains why some things are best done centrally (for example at 23 min 30 seconds). Why do you think he is saying this? What does he claim are the benefits?***
+
+From what we could gather from his [presentation](https://www.youtube.com/watch?v=BNTt2aLB1tg&t=7s), is what he means by this is that some things are best done centrally. He suggests that doing so helps address challenges in complex, large-scale systems and organizations. The key benefits he outlines were:
+
+- **Consistency**: Ensuring uniform quality and standards across the organization.
+- **Efficiency**: Reducing duplication and costs by managing resources centrally.
+- **Specialization and Expertise**: Centralizing knowledge and skills to handle complex tasks.
+- **Coordination**: Improving alignment and integration of complex systems.
+
+Stefan also highlights how centralization can enable individuals or small teams to act independently and make quick, efficient decisions. This decentralized decision-making is possible because the core functions are centralized, allowing for more focused, consistent guidance across the organization.
+
+Essentially, he advocates for centralizing specific areas to achieve consistency, efficiency, and specialization, ultimately improving quality, reducing costs, and enhancing security and coordination.
+
+In summary, he thinks centralization is important because it ensures uniform quality and compliance with standards, enables more efficient use of resources, pools specialized expertise, and enhances coordination across different parts of the organization. This leads to better collaboration and smoother functioning within large systems and a happy Stefan (rip bless his soul).
 
 ### Q4: ABCDE of Modern Architecture
 Do you find his arguments persuasive and if so why?
